@@ -1,0 +1,90 @@
+.conv-item {
+	margin: 0.25rem 0;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.conv-link {
+	flex: 1;
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	padding: 6px 8px;
+	border-radius: 6px;
+}
+
+.conv-link:hover {
+	background: rgba(0, 0, 0, 0.06);
+}
+
+.conv-link.active {
+	background: rgba(59, 130, 246, 0.15);
+	border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.icon {
+	text-decoration: none;
+	padding: 4px 6px;
+	border-radius: 6px;
+	color: inherit;
+}
+
+.icon:hover {
+	background: rgba(0, 0, 0, 0.06);
+}
+
+.icon.danger:hover {
+	background: rgba(239, 68, 68, 0.12);
+	color: #ef4444;
+}
+
+.sidebar-actions {
+	margin-bottom: 8px;
+}
+
+.sidebar-actions .new-chat {
+	display: block;
+	background: rgba(59, 130, 246, 0.1);
+	color: #1d4ed8;
+	text-decoration: none;
+	padding: 6px 8px;
+	border-radius: 8px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.sidebar-actions .new-chat:hover {
+	background: rgba(59, 130, 246, 0.2);
+}
+
+.gradio-container label {
+	display: none;
+}
+
+#fixed-sidebar {
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	padding-right: 8px;
+}
+
+#fixed-sidebar .gr-html {
+	max-height: calc(100vh - 140px);
+	overflow-y: auto;
+}
+
+#rename-modal {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 50;
+}
+
+#rename-modal > div {
+	padding: 16px;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	min-width: 360px;
+}
